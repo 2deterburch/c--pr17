@@ -1,0 +1,13 @@
+POST http://localhost:5077/api/Books
+Content-Type: application/json
+X-User-Role: Admin
+
+{
+  "title": "Billy Summers",
+  "authorId": 1
+}
+
+###
+
+DELETE http://localhost:5077/api/Books/1
+X-User-Role: Manager
